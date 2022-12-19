@@ -22,7 +22,7 @@ libtool
 pkg-config
 python37
 
-git clone https://gitlab.com/blackcoin/blackcoin-more.git
+git clone https://github.com/USDGcoinFoundation/USDGcoin.git
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

@@ -72,7 +72,7 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://gitlab.com/blackcoin/blackcoin-more.git
+    git clone https://github.com/USDGcoinFoundation/USDGcoin.git
     cd blackcoin-more
 
 ## Building for 64-bit Windows
