@@ -1,5 +1,5 @@
 {
-  "name": "bitcoin-core",
+  "name": "usdg",
   "version-string": "1",
   "dependencies": [
     "berkeleydb",

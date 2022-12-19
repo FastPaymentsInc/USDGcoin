@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-// bitcoin includes.
+// usdg includes.
 #include <..\src\script\bitcoinconsensus.h>
 #include <..\src\primitives\transaction.h>
 #include <..\src\script\script.h>

@@ -94,7 +94,7 @@ src/qt/usdg-qt.includes
 Makefile
 !depends/Makefile
 src/qt/usdg-qt
-usdg-Qt.app
+USDG-Qt.app
 background.tiff*
 
 # Qt Creator
