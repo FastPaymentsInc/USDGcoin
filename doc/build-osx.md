@@ -99,18 +99,18 @@ git clone https://github.com/bitcoin/bitcoin.git
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run `bitcoind` or  `bitcoin-qt`.
+It is not necessary to build wallet functionality to run `usdgd` or  `usdg-qt`.
 To enable legacy wallets, you must install `berkeley-db@4`.
 To enable [descriptor wallets](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md), `sqlite` is required.
 Skip `berkeley-db@4` if you intend to *exclusively* use descriptor wallets.
 
 ###### Legacy Wallet Support
 
-`berkeley-db@4` is required to enable support for legacy wallets.
+`berkeley-db@62` is required to enable support for legacy wallets.
 Skip if you don't intend to use legacy wallets.
 
 ``` bash
-brew install berkeley-db@4
+brew install berkeley-db@62
 ```
 
 ###### Descriptor Wallet Support

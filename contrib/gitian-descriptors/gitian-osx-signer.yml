@@ -1,5 +1,5 @@
 ---
-name: "bitcoin-dmg-signer"
+name: "usdg-dmg-signer"
 distro: "ubuntu"
 suites:
 - "focal"
@@ -16,7 +16,7 @@ remotes:
   "dir": "signapple"
   "commit": "b084cbbf44d5330448ffce0c7d118f75781b64bd"
 files:
-- "bitcoin-osx-unsigned.tar.gz"
+- "usdg-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
