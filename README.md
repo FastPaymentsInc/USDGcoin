@@ -1,1 +1,1 @@
-# USDGcoin
+# USDG-22.x
