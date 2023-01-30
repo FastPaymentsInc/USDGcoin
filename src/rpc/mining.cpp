@@ -1122,7 +1122,7 @@ static RPCHelpMan estimatefee()
 
     UniValue result(UniValue::VOBJ);
     UniValue errors(UniValue::VARR);
-    CFeeRate feeRate = CFeeRate(MIN_TX_FEE_PER_KB);
+    CFeeRate feeRate = CFeeRate(TX_FEE_PER_KB);
     if (feeRate != CFeeRate(0)) {
         result.pushKV("feerate", ValueFromAmount(feeRate.GetFeePerK()));
     } else {
