@@ -727,7 +727,7 @@ void static ThreadStakeMiner(std::shared_ptr<CWallet> pwallet, ChainstateManager
 // peercoin: stake minter
 void MinePoS(bool fGenerate, std::shared_ptr<CWallet> pwallet, ChainstateManager* chainman, CChainState* chainstate, CConnman* connman, CTxMemPool* mempool)
 {
-    if (!fGenerate) {
+    if (!fGenerate or pwallet->IsWalletFlagSet(WALLET_FLAG_DISABLE_PRIVATE_KEYS)) {
         fEnableStaking = false;
         return;
     }
