@@ -43,7 +43,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "USDG"
-#define QAPP_ORG_DOMAIN "usdgcoin.org"
+#define QAPP_ORG_DOMAIN "usdigitalgold.org"
 #define QAPP_APP_NAME_DEFAULT "USDG-Qt"
 #define QAPP_APP_NAME_TESTNET "USDG-Qt-testnet"
 #define QAPP_APP_NAME_SIGNET "USDG-Qt-signet"
