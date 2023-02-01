@@ -460,7 +460,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Blackcoins an eine Blackcoin-Adresse überweisen</translation>
+        <translation>Blackcoins an eine USDG-Adresse überweisen</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -512,7 +512,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Nachrichten signieren, um den Besitz Ihrer Blackcoin-Adressen zu beweisen</translation>
+        <translation>Nachrichten signieren, um den Besitz Ihrer USDG-Adressen zu beweisen</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -520,7 +520,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Blackcoin-Adressen signiert wurden</translation>
+        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen USDG-Adressen signiert wurden</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1483,7 +1483,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den Blackcoin-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
+        <translation>Automatisch den USDG-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1663,7 +1663,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Wallet wird automatisch synchronisiert, nachdem eine Verbindung zum Blackcoin-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
+        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Wallet wird automatisch synchronisiert, nachdem eine Verbindung zum USDG-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -3031,7 +3031,7 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Die Nachricht signieren, um den Besitz dieser Blackcoin-Adresse zu beweisen</translation>
+        <translation>Die Nachricht signieren, um den Besitz dieser USDG-Adresse zu beweisen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3067,7 +3067,7 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen Blackcoin-Adresse signiert wurde</translation>
+        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen USDG-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

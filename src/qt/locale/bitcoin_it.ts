@@ -444,7 +444,7 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Invia fondi ad un indirizzo Blackcoin</translation>
+        <translation>Invia fondi ad un indirizzo USDG</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -496,7 +496,7 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Firma messaggi con i tuoi indirizzi Blackcoin per dimostrarne il possesso</translation>
+        <translation>Firma messaggi con i tuoi indirizzi USDG per dimostrarne il possesso</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -504,7 +504,7 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifica che i messaggi siano stati firmati con gli indirizzi Blackcoin specificati</translation>
+        <translation>Verifica che i messaggi siano stati firmati con gli indirizzi USDG specificati</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1459,7 +1459,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta del client Blackcoin sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
+        <translation>Apri automaticamente la porta del client USDG sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1547,7 +1547,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Scegli l'unità di suddivisione predefinita da utilizzare per l'interfaccia e per l'invio di blackcoin.</translation>
+        <translation>Scegli l'unità di suddivisione predefinita da utilizzare per l'interfaccia e per l'invio di usdg.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2488,7 +2488,7 @@ Per ulteriori informazioni su come usare la console, premi %6.
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Blackcoin</translation>
+        <translation>Invia USDG</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2954,7 +2954,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Firma un messaggio per dimostrare di possedere questo indirizzo Blackcoin</translation>
+        <translation>Firma un messaggio per dimostrare di possedere questo indirizzo USDG</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

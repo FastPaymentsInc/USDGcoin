@@ -399,7 +399,7 @@ Firmar solo es posible con direcciones del tipo Legacy.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Blackcoin</translation>
+        <translation>Enviar monedas a una dirección USDG</translation>
     </message>
     <message>
         <source>&amp;Options…</source>

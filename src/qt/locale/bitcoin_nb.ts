@@ -1519,7 +1519,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Blackcoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <translation>Åpne automatisk USDG klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1683,7 +1683,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Blackcoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med USDG-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2577,7 +2577,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Blackcoin</translation>
+        <translation>Send USDG</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3050,7 +3050,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Blackcoin-adressen</translation>
+        <translation>Signer meldingen for å bevise at du eier denne USDG-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3086,7 +3086,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Blackcoin-adressen</translation>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte USDG-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

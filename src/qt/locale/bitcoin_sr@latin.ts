@@ -352,7 +352,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Pošalji novčiće na Blackcoin adresu</translation>
+        <translation>Pošalji novčiće na USDG adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -384,11 +384,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Potpišite poruke sa svojim Blackcoin adresama da biste dokazali njihovo vlasništvo</translation>
+        <translation>Potpišite poruke sa svojim USDG adresama da biste dokazali njihovo vlasništvo</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Proverite poruke da biste utvrdili sa kojim Blackcoin adresama su potpisane</translation>
+        <translation>Proverite poruke da biste utvrdili sa kojim USDG adresama su potpisane</translation>
     </message>
     <message>
         <source>&amp;File</source>

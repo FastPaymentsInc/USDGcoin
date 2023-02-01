@@ -395,7 +395,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Gửi coin đến một địa chỉ Blackcoin</translation>
+        <translation>Gửi coin đến một địa chỉ USDG</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -427,11 +427,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Đăng ký lời nhắn với địa chỉ Blackcoin của bạn để chứng minh quyền sở hữu chúng</translation>
+        <translation>Đăng ký lời nhắn với địa chỉ USDG của bạn để chứng minh quyền sở hữu chúng</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Xác minh lời nhắn để chắc chắn đã được đăng ký với địa chỉ Blackcoin xác định</translation>
+        <translation>Xác minh lời nhắn để chắc chắn đã được đăng ký với địa chỉ USDG xác định</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -1201,7 +1201,7 @@
     <name>OverviewPage</name>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Thông tin được hiển thị có thể đã lỗi thời. Cái wallet tự động đồng bộ với Blackcoin network sau một connection được thiết lập, nhưng quá trình này vẫn chưa completed yet.</translation>
+        <translation>Thông tin được hiển thị có thể đã lỗi thời. Cái wallet tự động đồng bộ với USDG network sau một connection được thiết lập, nhưng quá trình này vẫn chưa completed yet.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2141,7 +2141,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Ký tin nhắn để chứng minh bạn sở hữu Blackcoin address này</translation>
+        <translation>Ký tin nhắn để chứng minh bạn sở hữu USDG address này</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

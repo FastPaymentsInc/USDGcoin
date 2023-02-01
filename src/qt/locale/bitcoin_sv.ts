@@ -424,7 +424,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Skicka blackcoin till en Blackcoin-adress</translation>
+        <translation>Skicka blackcoin till en USDG-adress</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -472,7 +472,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signera meddelanden med dina Blackcoin-adresser för att bevisa att du äger dem</translation>
+        <translation>Signera meddelanden med dina USDG-adresser för att bevisa att du äger dem</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -480,7 +480,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de signerades med angivna Blackcoin-adresser</translation>
+        <translation>Verifiera meddelanden för att vara säker på att de signerades med angivna USDG-adresser</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1354,7 +1354,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Blackcoin-klientens port på routern. Detta fungerar endast om din router stödjer UPnP och det är är aktiverat.</translation>
+        <translation>Öppna automatiskt USDG-klientens port på routern. Detta fungerar endast om din router stödjer UPnP och det är är aktiverat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1501,7 +1501,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Blackcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med USDG-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2685,7 +2685,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna Blackcoin-adress</translation>
+        <translation>Signera meddelandet för att bevisa att du äger denna USDG-adress</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2721,7 +2721,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att det signerades med angiven Blackcoin-adress</translation>
+        <translation>Verifiera meddelandet för att vara säker på att det signerades med angiven USDG-adress</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

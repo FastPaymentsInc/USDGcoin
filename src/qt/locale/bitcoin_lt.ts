@@ -412,7 +412,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Siųsti monetas Blackcoin adresui</translation>
+        <translation>Siųsti monetas USDG adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>

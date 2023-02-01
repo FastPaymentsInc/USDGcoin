@@ -1487,7 +1487,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvori port Blackcoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
+        <translation>Automatski otvori port USDG klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1691,7 +1691,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Blackcoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
+        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s USDG mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
     </message>
     <message>
         <source>Watch-only:</source>

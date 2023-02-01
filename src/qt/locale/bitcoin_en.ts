@@ -87,7 +87,7 @@
     <message>
         <location line="+7"/>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Blackcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <translation>These are your USDG addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -414,7 +414,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="-1109"/>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Send coins to a Blackcoin address</translation>
+        <translation>Send coins to a USDG address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -479,7 +479,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+1"/>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Sign messages with your Blackcoin addresses to prove you own them</translation>
+        <translation>Sign messages with your USDG addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -489,7 +489,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+1"/>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Blackcoin addresses</translation>
+        <translation>Verify messages to ensure they were signed with specified USDG addresses</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -697,7 +697,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+4"/>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Show the %1 help message to get a list with possible Blackcoin command-line options</translation>
+        <translation>Show the %1 help message to get a list with possible USDG command-line options</translation>
     </message>
     <message>
         <location line="+30"/>
@@ -754,8 +754,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection to Blackcoin network.</numerusform>
-            <numerusform>%n active connections to Blackcoin network.</numerusform>
+            <numerusform>%n active connection to USDG network.</numerusform>
+            <numerusform>%n active connections to USDG network.</numerusform>
         </translation>
     </message>
     <message>
@@ -1220,7 +1220,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+77"/>
         <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Blackcoin address.</translation>
+        <translation>The entered address &quot;%1&quot; is not a valid USDG address.</translation>
     </message>
     <message>
         <location line="+33"/>
@@ -1349,7 +1349,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location filename="../intro.cpp" line="+32"/>
         <source>Bitcoin</source>
-        <translation type="unfinished">Blackcoin</translation>
+        <translation type="unfinished">USDG</translation>
     </message>
     <message>
         <location line="+162"/>
@@ -1388,7 +1388,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+2"/>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 will download and store a copy of the Blackcoin block chain.</translation>
+        <translation>%1 will download and store a copy of the USDG block chain.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1416,7 +1416,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+119"/>
         <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the blackcoin network, as detailed below.</translation>
+        <translation>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the usdg network, as detailed below.</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -1672,7 +1672,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+32"/>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Blackcoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <translation>Automatically open the USDG client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1702,7 +1702,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message>
         <location line="+7"/>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Connect to the Blackcoin network through a SOCKS5 proxy.</translation>
+        <translation>Connect to the USDG network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1926,7 +1926,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <location line="+62"/>
         <location line="+335"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Blackcoin network after a connection is established, but this process has not completed yet.</translation>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the USDG network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-127"/>
@@ -2273,7 +2273,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <message>
         <location filename="../guiutil.cpp" line="+120"/>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Enter a Blackcoin address (e.g. %1)</translation>
+        <translation>Enter a USDG address (e.g. %1)</translation>
     </message>
     <message>
         <location line="+540"/>
@@ -3069,7 +3069,7 @@ For more information on using this console, type %6.
     <message>
         <location line="-3"/>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blackcoin network.</translation>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the USDG network.</translation>
     </message>
     <message>
         <location line="+30"/>
@@ -3725,7 +3725,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="+100"/>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Warning: Invalid Blackcoin address</translation>
+        <translation>Warning: Invalid USDG address</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3775,7 +3775,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="-7"/>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>The Blackcoin address to send the payment to</translation>
+        <translation>The USDG address to send the payment to</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3843,7 +3843,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="+58"/>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>A message that was attached to the blackcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blackcoin network.</translation>
+        <translation>A message that was attached to the usdg: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the USDG network.</translation>
     </message>
     <message>
         <location line="+448"/>
@@ -3891,7 +3891,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="+18"/>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>The Blackcoin address to sign the message with</translation>
+        <translation>The USDG address to sign the message with</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3934,7 +3934,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Sign the message to prove you own this Blackcoin address</translation>
+        <translation>Sign the message to prove you own this USDG address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3965,7 +3965,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="+21"/>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>The Blackcoin address the message was signed with</translation>
+        <translation>The USDG address the message was signed with</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -3982,7 +3982,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     <message>
         <location line="+9"/>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Blackcoin address</translation>
+        <translation>Verify the message to ensure it was signed with the specified USDG address</translation>
     </message>
     <message>
         <location line="+3"/>

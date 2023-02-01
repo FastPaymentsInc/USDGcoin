@@ -457,7 +457,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Blackcoin küldése megadott címre</translation>
+        <translation>USDG küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -517,7 +517,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Blackcoin-címekkel vannak-e aláírva</translation>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt USDG-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -3185,7 +3185,7 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Ellenőrizze az üzenetet, hogy valóban a megjelölt Blackcoin címmel van-e aláírva</translation>
+        <translation>Ellenőrizze az üzenetet, hogy valóban a megjelölt USDG címmel van-e aláírva</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

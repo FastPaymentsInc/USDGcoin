@@ -195,7 +195,7 @@ static RPCHelpMan getnewaddress()
                     {"address_type", RPCArg::Type::STR, RPCArg::DefaultHint{"set by -addresstype"}, "The address type to use. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."},
                 },
                 RPCResult{
-                    RPCResult::Type::STR, "address", "The new blackcoin address"
+                    RPCResult::Type::STR, "address", "The new usdg address"
                 },
                 RPCExamples{
                     HelpExampleCli("getnewaddress", "")
@@ -290,7 +290,7 @@ static RPCHelpMan setlabel()
     return RPCHelpMan{"setlabel",
                 "\nSets the label associated with the given address.\n",
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The blackcoin address to be associated with a label."},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The usdg address to be associated with a label."},
                     {"label", RPCArg::Type::STR, RPCArg::Optional::NO, "The label to assign to the address."},
                 },
                 RPCResult{RPCResult::Type::NONE, "", ""},
@@ -434,7 +434,7 @@ static RPCHelpMan sendtoaddress()
                 "\nSend an amount to a given address." +
         HELP_REQUIRING_PASSPHRASE,
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The blackcoin address to send to."},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The usdg address to send to."},
                     {"amount", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "The amount in " + CURRENCY_UNIT + " to send. eg 0.1"},
                     {"comment", RPCArg::Type::STR, RPCArg::Optional::OMITTED_NAMED_ARG, "A comment used to store what the transaction is for.\n"
                                          "This is not part of the transaction, just kept in your wallet."},
@@ -535,7 +535,7 @@ static RPCHelpMan listaddressgroupings()
                         {
                             {RPCResult::Type::ARR_FIXED, "", "",
                             {
-                                {RPCResult::Type::STR, "address", "The blackcoin address"},
+                                {RPCResult::Type::STR, "address", "The usdg address"},
                                 {RPCResult::Type::STR_AMOUNT, "amount", "The amount in " + CURRENCY_UNIT},
                                 {RPCResult::Type::STR, "label", /* optional */ true, "The label"},
                             }},
@@ -587,7 +587,7 @@ static RPCHelpMan signmessage()
                 "\nSign a message with the private key of an address" +
         HELP_REQUIRING_PASSPHRASE,
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The blackcoin address to use for the private key."},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The usdg address to use for the private key."},
                     {"message", RPCArg::Type::STR, RPCArg::Optional::NO, "The message to create a signature of."},
                 },
                 RPCResult{
@@ -689,7 +689,7 @@ static RPCHelpMan getreceivedbyaddress()
     return RPCHelpMan{"getreceivedbyaddress",
                 "\nReturns the total amount received by the given address in transactions with at least minconf confirmations.\n",
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The blackcoin address for transactions."},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The usdg address for transactions."},
                     {"minconf", RPCArg::Type::NUM, RPCArg::Default{1}, "Only include transactions confirmed at least this many times."},
                 },
                 RPCResult{
@@ -848,7 +848,7 @@ static RPCHelpMan sendmany()
                     {"dummy", RPCArg::Type::STR, RPCArg::Optional::NO, "Must be set to \"\" for backwards compatibility.", "\"\""},
                     {"amounts", RPCArg::Type::OBJ_USER_KEYS, RPCArg::Optional::NO, "The addresses and amounts",
                         {
-                            {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "The blackcoin address is the key, the numeric amount (can be string) in " + CURRENCY_UNIT + " is the value"},
+                            {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "The usdg address is the key, the numeric amount (can be string) in " + CURRENCY_UNIT + " is the value"},
                         },
                     },
                     {"minconf", RPCArg::Type::NUM, RPCArg::Optional::OMITTED_NAMED_ARG, "Ignored dummy value"},
@@ -934,9 +934,9 @@ static RPCHelpMan addmultisigaddress()
                 "If 'label' is specified, assign address to that label.\n",
                 {
                     {"nrequired", RPCArg::Type::NUM, RPCArg::Optional::NO, "The number of required signatures out of the n keys or addresses."},
-                    {"keys", RPCArg::Type::ARR, RPCArg::Optional::NO, "The blackcoin addresses or hex-encoded public keys",
+                    {"keys", RPCArg::Type::ARR, RPCArg::Optional::NO, "The usdg addresses or hex-encoded public keys",
                         {
-                            {"key", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "blackcoin address or hex-encoded public key"},
+                            {"key", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "usdg address or hex-encoded public key"},
                         },
                         },
                     {"label", RPCArg::Type::STR, RPCArg::Optional::OMITTED_NAMED_ARG, "A label to assign the addresses to."},
@@ -1393,7 +1393,7 @@ static RPCHelpMan listtransactions()
                         {RPCResult::Type::OBJ, "", "", Cat(Cat<std::vector<RPCResult>>(
                         {
                             {RPCResult::Type::BOOL, "involvesWatchonly", "Only returns true if imported addresses were involved in transaction."},
-                            {RPCResult::Type::STR, "address", "The blackcoin address of the transaction."},
+                            {RPCResult::Type::STR, "address", "The usdg address of the transaction."},
                             {RPCResult::Type::STR, "category", "The transaction category.\n"
                                 "\"send\"                  Transactions sent.\n"
                                 "\"receive\"               Non-coinbase transactions received.\n"
@@ -1506,7 +1506,7 @@ static RPCHelpMan listsinceblock()
                             {RPCResult::Type::OBJ, "", "", Cat(Cat<std::vector<RPCResult>>(
                             {
                                 {RPCResult::Type::BOOL, "involvesWatchonly", "Only returns true if imported addresses were involved in transaction."},
-                                {RPCResult::Type::STR, "address", "The blackcoin address of the transaction."},
+                                {RPCResult::Type::STR, "address", "The usdg address of the transaction."},
                                 {RPCResult::Type::STR, "category", "The transaction category.\n"
                                     "\"send\"                  Transactions sent.\n"
                                     "\"receive\"               Non-coinbase transactions received.\n"
@@ -1650,7 +1650,7 @@ static RPCHelpMan gettransaction()
                             {RPCResult::Type::OBJ, "", "",
                             {
                                 {RPCResult::Type::BOOL, "involvesWatchonly", "Only returns true if imported addresses were involved in transaction."},
-                                {RPCResult::Type::STR, "address", "The blackcoin address involved in the transaction."},
+                                {RPCResult::Type::STR, "address", "The usdg address involved in the transaction."},
                                 {RPCResult::Type::STR, "category", "The transaction category.\n"
                                     "\"send\"                  Transactions sent.\n"
                                     "\"receive\"               Non-coinbase transactions received.\n"
@@ -2065,7 +2065,7 @@ static RPCHelpMan encryptwallet()
                 RPCExamples{
             "\nEncrypt your wallet\n"
             + HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending blackcoin\n"
+            "\nNow set the passphrase to use the wallet, such as for signing or sending usdg\n"
             + HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can do something like sign\n"
             + HelpExampleCli("signmessage", "\"address\" \"test message\"") +
@@ -2843,9 +2843,9 @@ static RPCHelpMan listunspent()
                 {
                     {"minconf", RPCArg::Type::NUM, RPCArg::Default{1}, "The minimum confirmations to filter"},
                     {"maxconf", RPCArg::Type::NUM, RPCArg::Default{9999999}, "The maximum confirmations to filter"},
-                    {"addresses", RPCArg::Type::ARR, RPCArg::Default{UniValue::VARR}, "The blackcoin addresses to filter",
+                    {"addresses", RPCArg::Type::ARR, RPCArg::Default{UniValue::VARR}, "The usdg addresses to filter",
                         {
-                            {"address", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "blackcoin address"},
+                            {"address", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "usdg address"},
                         },
                     },
                     {"include_unsafe", RPCArg::Type::BOOL, RPCArg::Default{true}, "Include outputs that are not safe to spend\n"
@@ -2866,7 +2866,7 @@ static RPCHelpMan listunspent()
                         {
                             {RPCResult::Type::STR_HEX, "txid", "the transaction id"},
                             {RPCResult::Type::NUM, "vout", "the vout value"},
-                            {RPCResult::Type::STR, "address", "the blackcoin address"},
+                            {RPCResult::Type::STR, "address", "the usdg address"},
                             {RPCResult::Type::STR, "label", "The associated label, or \"\" for the default label"},
                             {RPCResult::Type::STR, "scriptPubKey", "the script key"},
                             {RPCResult::Type::STR_AMOUNT, "amount", "the transaction output amount in " + CURRENCY_UNIT},
@@ -2915,7 +2915,7 @@ static RPCHelpMan listunspent()
             const UniValue& input = inputs[idx];
             CTxDestination dest = DecodeDestination(input.get_str());
             if (!IsValidDestination(dest)) {
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Blackcoin address: ") + input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid USDG address: ") + input.get_str());
             }
             if (!destinations.insert(dest).second) {
                 throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ") + input.get_str());
@@ -3107,7 +3107,7 @@ void FundTransaction(CWallet& wallet, CMutableTransaction& tx, CAmount& fee_out,
             CTxDestination dest = DecodeDestination(change_address_str);
 
             if (!IsValidDestination(dest)) {
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Change address must be a valid blackcoin address");
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Change address must be a valid usdg address");
             }
 
             coinControl.destChange = dest;
@@ -3201,7 +3201,7 @@ static RPCHelpMan fundrawtransaction()
                             {"include_unsafe", RPCArg::Type::BOOL, RPCArg::Default{false}, "Include inputs that are not safe to spend (unconfirmed transactions from outside keys and unconfirmed replacement transactions).\n"
                                                           "Warning: the resulting transaction may become invalid if one of the unsafe inputs disappears.\n"
                                                           "If that happens, you will need to fund the transaction with different inputs and republish it."},
-                            {"changeAddress", RPCArg::Type::STR, RPCArg::DefaultHint{"pool address"}, "The blackcoin address to receive the change"},
+                            {"changeAddress", RPCArg::Type::STR, RPCArg::DefaultHint{"pool address"}, "The usdg address to receive the change"},
                             {"changePosition", RPCArg::Type::NUM, RPCArg::DefaultHint{"random"}, "The index of the change output"},
                             {"change_type", RPCArg::Type::STR, RPCArg::DefaultHint{"set by -changetype"}, "The output type to use. Only valid if changeAddress is not specified. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."},
                             {"includeWatching", RPCArg::Type::BOOL, RPCArg::DefaultHint{"true for watch-only wallets, otherwise false"}, "Also select inputs which are watch only.\n"
@@ -4007,15 +4007,15 @@ static UniValue AddressBookDataToJSON(const CAddressBookData& data, const bool v
 RPCHelpMan getaddressinfo()
 {
     return RPCHelpMan{"getaddressinfo",
-                "\nReturn information about the given blackcoin address.\n"
+                "\nReturn information about the given usdg address.\n"
                 "Some of the information will only be present if the address is in the active wallet.\n",
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The blackcoin address for which to get information."},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The usdg address for which to get information."},
                 },
                 RPCResult{
                     RPCResult::Type::OBJ, "", "",
                     {
-                        {RPCResult::Type::STR, "address", "The blackcoin address validated."},
+                        {RPCResult::Type::STR, "address", "The usdg address validated."},
                         {RPCResult::Type::STR_HEX, "scriptPubKey", "The hex-encoded scriptPubKey generated by the address."},
                         {RPCResult::Type::BOOL, "ismine", "If the address is yours."},
                         {RPCResult::Type::BOOL, "iswatchonly", "If the address is watchonly."},
@@ -4269,7 +4269,7 @@ static RPCHelpMan send()
                 {
                     {"", RPCArg::Type::OBJ_USER_KEYS, RPCArg::Optional::OMITTED, "",
                         {
-                            {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "A key-value pair. The key (string) is the blackcoin address, the value (float or string) is the amount in " + CURRENCY_UNIT + ""},
+                            {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "A key-value pair. The key (string) is the usdg address, the value (float or string) is the amount in " + CURRENCY_UNIT + ""},
                         },
                         },
                     {"", RPCArg::Type::OBJ, RPCArg::Optional::OMITTED, "",
@@ -4287,7 +4287,7 @@ static RPCHelpMan send()
                                                           "Warning: the resulting transaction may become invalid if one of the unsafe inputs disappears.\n"
                                                           "If that happens, you will need to fund the transaction with different inputs and republish it."},
                     {"add_to_wallet", RPCArg::Type::BOOL, RPCArg::Default{true}, "When false, returns a serialized transaction which will not be added to the wallet or broadcast"},
-                    {"change_address", RPCArg::Type::STR_HEX, RPCArg::DefaultHint{"pool address"}, "The blackcoin address to receive the change"},
+                    {"change_address", RPCArg::Type::STR_HEX, RPCArg::DefaultHint{"pool address"}, "The usdg address to receive the change"},
                     {"change_position", RPCArg::Type::NUM, RPCArg::DefaultHint{"random"}, "The index of the change output"},
                     {"change_type", RPCArg::Type::STR, RPCArg::DefaultHint{"set by -changetype"}, "The output type to use. Only valid if change_address is not specified. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."},
                     {"fee_rate", RPCArg::Type::AMOUNT, RPCArg::DefaultHint{"not set, fall back to wallet fee estimation"}, "Specify a fee rate in " + CURRENCY_ATOM + "/vB."},
@@ -4599,7 +4599,7 @@ static RPCHelpMan walletcreatefundedpsbt()
                         {
                             {"", RPCArg::Type::OBJ_USER_KEYS, RPCArg::Optional::OMITTED, "",
                                 {
-                                    {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "A key-value pair. The key (string) is the blackcoin address, the value (float or string) is the amount in " + CURRENCY_UNIT + ""},
+                                    {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "A key-value pair. The key (string) is the usdg address, the value (float or string) is the amount in " + CURRENCY_UNIT + ""},
                                 },
                                 },
                             {"", RPCArg::Type::OBJ, RPCArg::Optional::OMITTED, "",
@@ -4616,7 +4616,7 @@ static RPCHelpMan walletcreatefundedpsbt()
                             {"include_unsafe", RPCArg::Type::BOOL, RPCArg::Default{false}, "Include inputs that are not safe to spend (unconfirmed transactions from outside keys and unconfirmed replacement transactions).\n"
                                                           "Warning: the resulting transaction may become invalid if one of the unsafe inputs disappears.\n"
                                                           "If that happens, you will need to fund the transaction with different inputs and republish it."},
-                            {"changeAddress", RPCArg::Type::STR_HEX, RPCArg::DefaultHint{"pool address"}, "The blackcoin address to receive the change"},
+                            {"changeAddress", RPCArg::Type::STR_HEX, RPCArg::DefaultHint{"pool address"}, "The usdg address to receive the change"},
                             {"changePosition", RPCArg::Type::NUM, RPCArg::DefaultHint{"random"}, "The index of the change output"},
                             {"change_type", RPCArg::Type::STR, RPCArg::DefaultHint{"set by -changetype"}, "The output type to use. Only valid if changeAddress is not specified. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."},
                             {"includeWatching", RPCArg::Type::BOOL, RPCArg::DefaultHint{"true for watch-only wallets, otherwise false"}, "Also select inputs which are watch only"},
@@ -4768,7 +4768,7 @@ static RPCHelpMan walletdisplayaddress()
     return RPCHelpMan{"walletdisplayaddress",
         "Display address on an external signer for verification.",
         {
-            {"address",     RPCArg::Type::STR, RPCArg::Optional::NO, /* default_val */ "", "blackcoin address to display"},
+            {"address",     RPCArg::Type::STR, RPCArg::Optional::NO, /* default_val */ "", "usdg address to display"},
         },
         RPCResult{
             RPCResult::Type::OBJ,"","",

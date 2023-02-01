@@ -318,7 +318,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Blackcoin</translation>
+        <translation>Enviar monedas a una dirección USDG</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -737,7 +737,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Blackcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <translation>Abrir automáticamente el puerto del cliente USDG en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -832,7 +832,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Blackcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red USDG después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1335,7 +1335,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Blackcoin</translation>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección USDG</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1355,7 +1355,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Blackcoin indicada</translation>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección USDG indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

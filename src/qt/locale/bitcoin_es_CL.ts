@@ -2114,7 +2114,7 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Blackcoin especificada.</translation>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de USDG especificada.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

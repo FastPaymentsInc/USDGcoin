@@ -180,7 +180,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Испрати блэккоини на Blackcoin адреса</translation>
+        <translation>Испрати блэккоини на USDG адреса</translation>
     </message>
     <message>
         <source>&amp;Send</source>

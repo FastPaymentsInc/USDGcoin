@@ -317,7 +317,7 @@ bool ArgsManager::ParseParameters(int argc, const char* const argv[], std::strin
         if (key.substr(0, 5) == "-psn_") continue;
 #endif
 
-        if (key == "-") break; //bitcoin-tx using stdin
+        if (key == "-") break; //usdg-tx using stdin
         std::string val;
         size_t is_index = key.find('=');
         if (is_index != std::string::npos) {
@@ -766,7 +766,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "blackcoin";
+    const char* pszModule = "usdg";
 #endif
     if (pex)
         return strprintf(

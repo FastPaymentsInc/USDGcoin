@@ -130,8 +130,8 @@ void AddButtonShortcut(QAbstractButton* button, const QKeySequence& shortcut)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no bitcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("blackcoin"))
+    // return if URI is not valid or is no usdg: URI
+    if(!uri.isValid() || uri.scheme() != QString("usdg"))
         return false;
 
     SendCoinsRecipient rv;
@@ -195,7 +195,7 @@ QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
     bool bech_32 = info.address.startsWith(QString::fromStdString(Params().Bech32HRP() + "1"));
 
-    QString ret = QString("blackcoin:%1").arg(bech_32 ? info.address.toUpper() : info.address);
+    QString ret = QString("usdg:%1").arg(bech_32 ? info.address.toUpper() : info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -425,7 +425,7 @@ bool openBitcoinConf()
 
     configFile.close();
 
-    /* Open bitcoin.conf with the associated application */
+    /* Open usdg.conf with the associated application */
     bool res = QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 #ifdef Q_OS_MAC
     // Workaround for macOS-specific behavior; see #15409.

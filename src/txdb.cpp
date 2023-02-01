@@ -299,7 +299,7 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                // peercoin/blackcoin related block index fields
+                // peercoin/usdg related block index fields
                 pindexNew->nFlags         = diskindex.nFlags;
                 pindexNew->nStakeModifier = diskindex.nStakeModifier;
 

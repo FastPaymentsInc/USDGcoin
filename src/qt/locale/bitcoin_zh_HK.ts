@@ -394,7 +394,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>付款至一個 Blackcoin 位址</translation>
+        <translation>付款至一個 USDG 位址</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>

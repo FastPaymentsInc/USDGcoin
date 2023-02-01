@@ -451,7 +451,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Send blackcoins til en Blackcoin-adresse</translation>
+        <translation>Send blackcoins til en USDG-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -499,7 +499,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signér beskeder med dine Blackcoin-adresser for at bevise, at de tilhører dig</translation>
+        <translation>Signér beskeder med dine USDG-adresser for at bevise, at de tilhører dig</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -507,7 +507,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificér beskeder for at sikre, at de er signeret med de angivne Blackcoin-adresser</translation>
+        <translation>Verificér beskeder for at sikre, at de er signeret med de angivne USDG-adresser</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1467,7 +1467,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn automatisk Blackcoin-klientens port på routeren. Dette virker kun, når din router understøtter UPnP, og UPnP er aktiveret.</translation>
+        <translation>Åbn automatisk USDG-klientens port på routeren. Dette virker kun, når din router understøtter UPnP, og UPnP er aktiveret.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1651,7 +1651,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Blackcoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
+        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med USDG-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2994,7 +2994,7 @@ Bemærk: Da gebyret beregnes på per-byte-basis, ville en gebyrsats på "100 sat
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signér denne besked for at bevise, at Blackcoin-adressen tilhører dig</translation>
+        <translation>Signér denne besked for at bevise, at USDG-adressen tilhører dig</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3030,7 +3030,7 @@ Bemærk: Da gebyret beregnes på per-byte-basis, ville en gebyrsats på "100 sat
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verificér beskeden for at sikre, at den er signeret med den angivne Blackcoin-adresse</translation>
+        <translation>Verificér beskeden for at sikre, at den er signeret med den angivne USDG-adresse</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

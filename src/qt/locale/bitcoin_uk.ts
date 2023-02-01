@@ -558,7 +558,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Blackcoin-адресою</translation>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною USDG-адресою</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -3141,7 +3141,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Blackcoin-адресою</translation>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною USDG-адресою</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

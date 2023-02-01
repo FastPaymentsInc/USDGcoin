@@ -394,7 +394,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>მონეტების გაგზავნა Blackcoin-მისამართზე</translation>
+        <translation>მონეტების გაგზავნა USDG-მისამართზე</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -426,11 +426,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>მესიჯებზე ხელმოწერა თქვენი Blackcoin-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
+        <translation>მესიჯებზე ხელმოწერა თქვენი USDG-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Blackcoin-მისამართით</translation>
+        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული USDG-მისამართით</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -931,7 +931,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>როუტერში Blackcoin-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
+        <translation>როუტერში USDG-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1026,7 +1026,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Blackcoin-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
+        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება USDG-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1605,7 +1605,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Blackcoin-მისამართით</translation>
+        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული USDG-მისამართით</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

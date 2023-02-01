@@ -453,7 +453,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Poslať mince na Blackcoin adresu</translation>
+        <translation>Poslať mince na USDG adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1666,7 +1666,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Blackcoin po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
+        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou USDG po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -3140,7 +3140,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 sat
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Overím správy sa uistiť že bola podpísaná označenou Blackcoin adresou</translation>
+        <translation>Overím správy sa uistiť že bola podpísaná označenou USDG adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

@@ -227,7 +227,7 @@ RPCHelpMan importaddress()
             "as change, and not show up in many RPCs.\n"
             "Note: Use \"getwalletinfo\" to query the scanning progress.\n",
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The Blackcoin address (or hex-encoded script)"},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The USDG address (or hex-encoded script)"},
                     {"label", RPCArg::Type::STR, RPCArg::Default{""}, "An optional label"},
                     {"rescan", RPCArg::Type::BOOL, RPCArg::Default{true}, "Rescan the wallet for transactions"},
                     {"p2sh", RPCArg::Type::BOOL, RPCArg::Default{false}, "Add the P2SH version of the script as well"},
@@ -547,7 +547,7 @@ RPCHelpMan dumpprivkey()
                 "\nReveals the private key corresponding to 'address'.\n"
                 "Then the importprivkey can be used with this output\n",
                 {
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The blackcoin address for the private key"},
+                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The usdg address for the private key"},
                 },
                 RPCResult{
                     RPCResult::Type::STR, "key", "The private key"
@@ -571,7 +571,7 @@ RPCHelpMan dumpprivkey()
     std::string strAddress = request.params[0].get_str();
     CTxDestination dest = DecodeDestination(strAddress);
     if (!IsValidDestination(dest)) {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Blackcoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid USDG address");
     }
     if (pwallet->m_wallet_unlock_staking_only)
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Wallet is unlocked for staking only");

@@ -998,7 +998,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>La dirección ingresada "%1" no es una dirección válida de Blackcoin.</translation>
+        <translation>La dirección ingresada "%1" no es una dirección válida de USDG.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>

@@ -555,7 +555,7 @@ static bool ProcessBlockFound(const CBlock* pblock, ChainstateManager* chainman,
 void PoSMiner(std::shared_ptr<CWallet> pwallet, ChainstateManager* chainman, CChainState* chainstate, CConnman* connman, CTxMemPool* mempool)
 {
     LogPrintf("PoSMiner started for proof-of-stake\n");
-    util::ThreadRename("blackcoin-stake-miner");
+    util::ThreadRename("usdg-stake-miner");
 
     unsigned int nExtraNonce = 0;
 

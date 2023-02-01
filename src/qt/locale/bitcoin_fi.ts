@@ -436,7 +436,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Lähetä kolikoita Blackcoin-osoitteeseen</translation>
+        <translation>Lähetä kolikoita USDG-osoitteeseen</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -464,7 +464,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota Blackcoin-ikkuna</translation>
+        <translation>Näytä tai piilota USDG-ikkuna</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet…</source>
@@ -488,7 +488,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla Blackcoin -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <translation>Allekirjoita viestisi omalla USDG -osoitteellasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -496,7 +496,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Blackcoin -osoitteella</translation>
+        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä USDG -osoitteella</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1462,7 +1462,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Blackcoin-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <translation>Avaa USDG-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1546,11 +1546,11 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona blackcoin-määrät näytetään</translation>
+        <translation>Yksikkö jona usdg-määrät näytetään</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti blackcoin-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti usdg-määrien näyttämiseen.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1646,7 +1646,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Blackcoin-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu USDG-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -3001,7 +3001,7 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Blackcoin-osoitteen</translation>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän USDG-osoitteen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3037,7 +3037,7 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Blackcoin-osoitteella</translation>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä USDG-osoitteella</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

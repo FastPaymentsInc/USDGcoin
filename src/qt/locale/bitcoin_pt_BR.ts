@@ -412,7 +412,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar moedas para um endereço blackcoin</translation>
+        <translation>Enviar moedas para um endereço usdg</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -464,7 +464,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços Blackcoin para provar que você é dono delas</translation>
+        <translation>Assine mensagens com seus endereços USDG para provar que você é dono delas</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -472,7 +472,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços Blackcoin específicos</translation>
+        <translation>Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços USDG específicos</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1540,7 +1540,7 @@ Somente é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede Blackcoin depois que a conexão é estabelecida, mas este processo ainda não está completo.</translation>
+        <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede USDG depois que a conexão é estabelecida, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2720,7 +2720,7 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Assinar mensagem para provar que você é dono deste endereço Blackcoin</translation>
+        <translation>Assinar mensagem para provar que você é dono deste endereço USDG</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2756,7 +2756,7 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço Blackcoin específico</translation>
+        <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço USDG específico</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

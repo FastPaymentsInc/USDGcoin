@@ -448,7 +448,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar moedas para um endereço Blackcoin</translation>
+        <translation>Enviar moedas para um endereço USDG</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -500,7 +500,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Assine as mensagens com os seus endereços Blackcoin para provar que é o proprietário dos mesmos</translation>
+        <translation>Assine as mensagens com os seus endereços USDG para provar que é o proprietário dos mesmos</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -508,7 +508,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Blackcoin especificado</translation>
+        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço USDG especificado</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1483,7 +1483,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir a porta do cliente Blackcoin automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
+        <translation>Abrir a porta do cliente USDG automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1663,7 +1663,7 @@ Assinar só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Blackcoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
+        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede USDG depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2975,7 +2975,7 @@ Para mais informação acerca da utilização desta consola, escreva %6.
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Assine uma mensagem para provar que é dono deste endereço Blackcoin</translation>
+        <translation>Assine uma mensagem para provar que é dono deste endereço USDG</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3011,7 +3011,7 @@ Para mais informação acerca da utilização desta consola, escreva %6.
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Blackcoin especificado</translation>
+        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço USDG especificado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

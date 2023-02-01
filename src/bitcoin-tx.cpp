@@ -100,8 +100,8 @@ static int AppInitRawTx(int argc, char* argv[])
         std::string strUsage = PACKAGE_NAME " usdg-tx utility version " + FormatFullVersion() + "\n";
         if (!gArgs.IsArgSet("-version")) {
             strUsage += "\n"
-                "Usage:  usdg-tx [options] <hex-tx> [commands]  Update hex-encoded blackcoin transaction\n"
-                "or:     usdg-tx [options] -create [commands]   Create hex-encoded blackcoin transaction\n"
+                "Usage:  usdg-tx [options] <hex-tx> [commands]  Update hex-encoded usdg transaction\n"
+                "or:     usdg-tx [options] -create [commands]   Create hex-encoded usdg transaction\n"
                 "\n";
             strUsage += gArgs.GetHelpMessage();
         }
@@ -781,7 +781,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded bitcoin transaction
+            // param: hex-encoded usdg transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-")                 // "-" implies standard input
                 strHexTx = readStdin();

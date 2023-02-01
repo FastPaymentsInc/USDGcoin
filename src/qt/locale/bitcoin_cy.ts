@@ -336,7 +336,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Anfon arian i gyfeiriad Blackcoin</translation>
+        <translation>Anfon arian i gyfeiriad USDG</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -368,11 +368,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Blackcoin i brofi mae chi sy'n berchen arnynt</translation>
+        <translation>Arwyddo negeseuon gyda eich cyfeiriadau USDG i brofi mae chi sy'n berchen arnynt</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Blackcoin penodol</translation>
+        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau USDG penodol</translation>
     </message>
     <message>
         <source>&amp;File</source>

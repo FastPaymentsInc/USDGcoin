@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Blackcoin</translation>
+        <translation>Enviar monedas a una dirección USDG</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>

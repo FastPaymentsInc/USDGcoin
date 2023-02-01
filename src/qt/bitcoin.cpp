@@ -389,7 +389,7 @@ void BitcoinApplication::initializeResult(bool success, interfaces::BlockAndHead
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // blackcoin: URIs or payment requests:
+        // usdg: URIs or payment requests:
         if (paymentServer) {
             connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &BitcoinGUI::handlePaymentRequest);
             connect(window, &BitcoinGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
@@ -531,7 +531,7 @@ int GuiMain(int argc, char* argv[])
     // Gracefully exit if the user cancels
     if (!Intro::showIfNeeded(did_show_intro)) return EXIT_SUCCESS;
 
-    /// 6. Determine availability of data directory and parse bitcoin.conf
+    /// 6. Determine availability of data directory and parse usdg.conf
     /// - Do not call gArgs.GetDataDirNet() before this step finishes
     if (!CheckDataDirOption()) {
         InitError(strprintf(Untranslated("Specified data directory \"%s\" does not exist.\n"), gArgs.GetArg("-datadir", "")));
@@ -588,7 +588,7 @@ int GuiMain(int argc, char* argv[])
         exit(EXIT_SUCCESS);
 
     // Start up the payment server early, too, so impatient users that click on
-    // blackcoin: links repeatedly have their payment requests routed to this process:
+    // usdg: links repeatedly have their payment requests routed to this process:
     if (WalletModel::isWalletEnabled()) {
         app.createPaymentServer();
     }
