@@ -1,5 +1,7 @@
 USDG
 =====================================
+[![build](https://github.com/USDGcoinFoundation/USDGcoin/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/USDGcoinFoundation/USDGcoin/actions/workflows/build.yml)
+
 
 https://usdigitalgold.org
 
