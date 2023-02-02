@@ -236,7 +236,7 @@ public:
         pchMessageStart[3] = 0x04;
         nDefaultPort = 17533;
 
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000100001");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000005271db979acd550416");
         consensus.defaultAssumeValid = uint256S("0x00");
 
         nPruneAfterHeight = 1000;
