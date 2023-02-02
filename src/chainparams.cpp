@@ -269,6 +269,7 @@ public:
         checkpointData = {
             {
                 {     0, uint256S("0x0000ade4522264c59ec4b4b92dd4c8e288302fea5ce9e3992edfdd50b9f3c29a")}, // Genesis block
+                {  1200, uint256S("0xc28e21edf56c1f0a2cda4dda2a89f3f966c2b9b1e3fcaf71fa1f176fd7dc3305")}, // Pre-mine ended
             }
         };
 
@@ -277,10 +278,10 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Data from RPC: getchaintxstats 40500 ea12999341c1f02442ee9300a1da589a8d40f8f9a44bf4fbbb58b43c6f806c5d
-            /* nTime    */ 1657918880,
-            /* nTxCount */ 0,
-            /* dTxRate  */ 0.000
+            // Data from RPC: getchaintxstats 120 c28e21edf56c1f0a2cda4dda2a89f3f966c2b9b1e3fcaf71fa1f176fd7dc3305
+            /* nTime    */ 1675350592,
+            /* nTxCount */ 2514,
+            /* dTxRate  */ 0.126
         };
 
     }
