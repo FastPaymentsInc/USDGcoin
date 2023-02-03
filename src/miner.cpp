@@ -621,7 +621,7 @@ void PoSMiner(std::shared_ptr<CWallet> pwallet, ChainstateManager* chainman, CCh
                     uiInterface.NotifyAlertChanged();
                 }
                 fNeedToClear = true;
-                if (!connman->interruptNet.sleep_for(std::chrono::seconds(2)))
+                if (!connman->interruptNet.sleep_for(std::chrono::seconds(10)))
                         return;
             }
 
@@ -635,7 +635,7 @@ void PoSMiner(std::shared_ptr<CWallet> pwallet, ChainstateManager* chainman, CCh
                     uiInterface.NotifyAlertChanged();
                 }
                 fNeedToClear = true;
-                if (!connman->interruptNet.sleep_for(std::chrono::seconds(2)))
+                if (!connman->interruptNet.sleep_for(std::chrono::seconds(10)))
                         return;
             }
             if (fNeedToClear) {
