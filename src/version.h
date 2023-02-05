@@ -14,6 +14,9 @@ static const int PROTOCOL_VERSION = 70016;
 //! peercoin: used to communicate with clients that don't know how to send PoS information in headers
 static const int OLD_VERSION = 70015;
 
+//! USDG: used to communicate with Bitcore clients
+static const int BITCORE_VERSION = 70011;
+
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
 
