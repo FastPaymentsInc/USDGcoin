@@ -285,6 +285,7 @@ public:
 
     int64_t GetMedianTimePast() const
     {
+        /*
         int64_t pmedian[nMedianTimeSpan];
         int64_t* pbegin = &pmedian[nMedianTimeSpan];
         int64_t* pend = &pmedian[nMedianTimeSpan];
@@ -295,6 +296,9 @@ public:
 
         std::sort(pbegin, pend);
         return pbegin[(pend - pbegin)/2];
+        */
+        // USDG uses block time here
+        return GetBlockTime();
     }
 
     bool IsProofOfWork() const
