@@ -226,7 +226,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 0; // No activation delay
 
         consensus.nProtocolV3_1Time = 1675627200;
-        consensus.nLastPOWBlock = 2400;
+        consensus.nLastPOWBlock = 0x7fffffff;
         consensus.nStakeTimestampMask = 0xf;
         consensus.nCoinbaseMaturity = 10;
 
