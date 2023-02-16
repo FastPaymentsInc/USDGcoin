@@ -1686,7 +1686,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Tililläsi tällä hetkellä olevien Blackcoinien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien USDG määrä</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>

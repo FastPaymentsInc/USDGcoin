@@ -37,7 +37,7 @@ It is recommended to use Berkeley DB 6.2. You cannot use the BerkeleyDB library
 from ports, for the same reason as boost above (g++/libstd++ incompatibility).
 
 ```bash
-# Pick some path to install BDB to, here we create a directory within the blackcoin directory
+# Pick some path to install BDB to, here we create a directory within the usdg directory
 BITCOIN_ROOT=$(pwd)
 BDB_PREFIX="${BITCOIN_ROOT}/build"
 mkdir -p $BDB_PREFIX

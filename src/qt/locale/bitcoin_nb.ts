@@ -1591,7 +1591,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av blackcoins.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av USDG.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>

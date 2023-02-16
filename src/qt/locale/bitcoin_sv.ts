@@ -424,7 +424,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Skicka blackcoin till en USDG-adress</translation>
+        <translation>Skicka USDG till en USDG-adress</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>

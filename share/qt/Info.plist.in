@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.blackcoin.USDG-Qt</string>
+  <string>org.usdg.USDG-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>

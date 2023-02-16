@@ -451,7 +451,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Send blackcoins til en USDG-adresse</translation>
+        <translation>Send USDG til en USDG-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1551,7 +1551,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af blackcoins.</translation>
+        <translation>Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af USDG.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2520,7 +2520,7 @@ For mere information om brug af denne konsol, skriv %6.
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send blackcoins</translation>
+        <translation>Send USDG</translation>
     </message>
     <message>
         <source>Coin Control Features</source>

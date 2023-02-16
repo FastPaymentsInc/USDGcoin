@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/usdgd"
 
 # User and group to own usdgd process
-#BITCOIND_USER="blackcoin"
-#BITCOIND_GROUP="blackcoin"
+#BITCOIND_USER="usdg"
+#BITCOIND_GROUP="usdg"
 
 # Path to bitcoind executable
 #BITCOIND_BIN="/usr/bin/usdgd"

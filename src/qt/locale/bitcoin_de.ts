@@ -460,7 +460,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Blackcoins an eine USDG-Adresse überweisen</translation>
+        <translation>USDG an eine USDG-Adresse überweisen</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1567,7 +1567,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Wählen Sie die standardmäßige Untereinheit, die in der Benutzeroberfläche und beim Überweisen von Blackcoins angezeigt werden soll.</translation>
+        <translation>Wählen Sie die standardmäßige Untereinheit, die in der Benutzeroberfläche und beim Überweisen von USDG angezeigt werden soll.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2553,7 +2553,7 @@ Für weitere Informationen über diese Konsole, tippe %6.
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Blackcoins überweisen</translation>
+        <translation>USDG überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>

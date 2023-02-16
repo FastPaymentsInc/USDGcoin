@@ -213,7 +213,7 @@ It is recommended to use Berkeley DB 6.2. If you have to build it yourself:
 ```bash
 BITCOIN_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the blackcoin directory
+# Pick some path to install BDB to, here we create a directory within the usdg directory
 BDB_PREFIX="${BITCOIN_ROOT}/build"
 mkdir -p $BDB_PREFIX
 
@@ -320,7 +320,7 @@ This example lists the steps necessary to setup and build a command line only, n
 
     pacman -S git base-devel boost libevent python
     git clone https://github.com/USDGcoinFoundation/USDGcoin.git
-    cd blackcoin-more/
+    cd USDGcoin/
     ./autogen.sh
     ./configure --disable-wallet --without-gui --without-miniupnpc
     make check

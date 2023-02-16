@@ -25,7 +25,7 @@ ExecStart=/usr/bin/usdgd -daemonwait \
 
 # Make sure the config directory is readable by the service user
 PermissionsStartOnly=true
-ExecStartPre=/bin/chgrp blackcoin /etc/usdg
+ExecStartPre=/bin/chgrp usdg /etc/usdg
 
 # Process management
 ####################
@@ -39,9 +39,9 @@ TimeoutStopSec=600
 # Directory creation and permissions
 ####################################
 
-# Run as blackcoin:blackcoin
-User=blackcoin
-Group=blackcoin
+# Run as usdg:usdg
+User=usdg
+Group=usdg
 
 # /run/usdgd
 RuntimeDirectory=usdgd

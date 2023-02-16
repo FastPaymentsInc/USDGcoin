@@ -401,7 +401,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Saada münte Blackcoini aadressile</translation>
+        <translation>Saada münte USDG aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -437,11 +437,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Blackcoini aadressiga</translation>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma USDG aadressiga</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Blackcoini aadressiga</translation>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud USDG aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -813,7 +813,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Blackcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <translation>USDG kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1417,7 +1417,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Allkirjasta sõnum Blackcoini aadressi sulle kuulumise tõestamiseks</translation>
+        <translation>Allkirjasta sõnum USDG aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1441,7 +1441,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Blackcoini aadressiga.</translation>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud USDG aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
