@@ -410,7 +410,7 @@ public:
         consensus.CSVHeight = std::numeric_limits<int>::max();
         consensus.SegwitHeight = std::numeric_limits<int>::max();
         consensus.MinBIP9WarningHeight = std::numeric_limits<int>::max();
-        consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nTargetTimespan = 16 * 60; // 16 mins
         consensus.nTargetSpacing = 64;
