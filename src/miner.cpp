@@ -135,12 +135,48 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
     if(!pblocktemplate.get())
         return nullptr;
     CBlock* const pblock = &pblocktemplate->block; // pointer for convenience
-    pblock->nTime = GetAdjustedTime();
+
+    // Add dummy coinbase tx as first transaction
+    pblock->vtx.emplace_back();
+    pblocktemplate->vTxFees.push_back(-1);       // updated at end
+    pblocktemplate->vTxSigOpsCost.push_back(-1); // updated at end
 
     LOCK2(cs_main, m_mempool.cs);
     CBlockIndex* pindexPrev = m_chainstate.m_chain.Tip();
     assert(pindexPrev != nullptr);
     nHeight = pindexPrev->nHeight + 1;
+
+    pblock->nVersion = g_versionbitscache.ComputeBlockVersion(pindexPrev, chainparams.GetConsensus());
+    // -regtest only: allow overriding block.nVersion with
+    // -blockversion=N to test forking scenarios
+    if (chainparams.MineBlocksOnDemand())
+        pblock->nVersion = gArgs.GetArg("-blockversion", pblock->nVersion);
+
+    pblock->nTime = GetAdjustedTime();
+
+    const int64_t nMedianTimePast = pindexPrev->GetMedianTimePast();
+
+    nLockTimeCutoff = (STANDARD_LOCKTIME_VERIFY_FLAGS & LOCKTIME_MEDIAN_TIME_PAST) ? nMedianTimePast : pblock->GetBlockTime();
+
+    // Decide whether to include witness transactions
+    // This is only needed in case the witness softfork activation is reverted
+    // (which would require a very deep reorganization).
+    // Note that the mempool would accept transactions with witness data before
+    // the deployment is active, but we would only ever mine blocks after activation
+    // unless there is a massive block reorganization with the witness softfork
+    // not activated.
+    // TODO: replace this with a call to main to assess validity of a mempool
+    // transaction (which in most cases can be a no-op).
+    fIncludeWitness = DeploymentActiveAfter(pindexPrev, chainparams.GetConsensus(), Consensus::DEPLOYMENT_SEGWIT);
+
+    int nPackagesSelected = 0;
+    int nDescendantsUpdated = 0;
+    addPackageTxs(nPackagesSelected, nDescendantsUpdated);
+
+    int64_t nTime1 = GetTimeMicros();
+
+    m_last_block_num_txs = nBlockTx;
+    m_last_block_weight = nBlockWeight;
 
     // Create coinbase transaction.
     CMutableTransaction coinbaseTx;
@@ -155,11 +191,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
         coinbaseTx.vout[0].nValue = nFees + GetBlockSubsidy(nHeight, chainparams.GetConsensus());
     }
 
-    // Add dummy coinbase tx as first transaction
-    pblock->vtx.emplace_back();
-    pblocktemplate->vTxFees.push_back(-1); // updated at end
-    pblocktemplate->vTxSigOpsCost.push_back(-1); // updated at end
-
+    // Proof-of-stake block
 #ifdef ENABLE_WALLET
     // peercoin: if coinstake available add coinstake tx
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime();  // only initialized at startup
@@ -182,7 +214,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
                     // Make the coinbase tx empty in case of proof of stake
                     coinbaseTx.vout[0].SetEmpty();
                     pblock->nTime = coinbaseTx.nTime = txCoinStake.nTime;
-                    pblock->vtx.push_back(MakeTransactionRef(CTransaction(txCoinStake)));
+                    pblock->vtx.insert(pblock->vtx.begin() + 1, MakeTransactionRef(CTransaction(txCoinStake)));
                     *pfPoSCancel = false;
                 }
             }
@@ -194,38 +226,6 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
         pblock->nFlags = CBlockIndex::BLOCK_PROOF_OF_STAKE;
     }
 #endif
-
-    pblock->nVersion = g_versionbitscache.ComputeBlockVersion(pindexPrev, chainparams.GetConsensus());
-    // -regtest only: allow overriding block.nVersion with
-    // -blockversion=N to test forking scenarios
-    if (chainparams.MineBlocksOnDemand())
-        pblock->nVersion = gArgs.GetArg("-blockversion", pblock->nVersion);
-
-    const int64_t nMedianTimePast = pindexPrev->GetMedianTimePast();
-
-    nLockTimeCutoff = (STANDARD_LOCKTIME_VERIFY_FLAGS & LOCKTIME_MEDIAN_TIME_PAST)
-                       ? nMedianTimePast
-                       : pblock->GetBlockTime();
-
-    // Decide whether to include witness transactions
-    // This is only needed in case the witness softfork activation is reverted
-    // (which would require a very deep reorganization).
-    // Note that the mempool would accept transactions with witness data before
-    // the deployment is active, but we would only ever mine blocks after activation
-    // unless there is a massive block reorganization with the witness softfork
-    // not activated.
-    // TODO: replace this with a call to main to assess validity of a mempool
-    // transaction (which in most cases can be a no-op).
-    fIncludeWitness = DeploymentActiveAfter(pindexPrev, chainparams.GetConsensus(), Consensus::DEPLOYMENT_SEGWIT);
-
-    int nPackagesSelected = 0;
-    int nDescendantsUpdated = 0;
-    addPackageTxs(nPackagesSelected, nDescendantsUpdated);
-
-    int64_t nTime1 = GetTimeMicros();
-
-    m_last_block_num_txs = nBlockTx;
-    m_last_block_weight = nBlockWeight;
 
     coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
     pblock->vtx[0] = MakeTransactionRef(std::move(coinbaseTx));
