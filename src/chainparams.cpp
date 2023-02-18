@@ -440,7 +440,7 @@ public:
         consensus.nMinimumChainWork = uint256{};
         consensus.defaultAssumeValid = uint256{};
 
-        consensus.nProtocolV3_1Time = std::numeric_limits<int64_t>::max();
+        consensus.nProtocolV3_1Time = 0;
         consensus.nLastPOWBlock = 0x7fffffff;
         consensus.nStakeTimestampMask = 0xf;
         consensus.nCoinbaseMaturity = 10;
