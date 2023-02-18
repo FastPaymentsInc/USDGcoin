@@ -4590,7 +4590,7 @@ void PeerManagerImpl::MaybeSendFeefilter(CNode& pto, std::chrono::microseconds c
     // peers with the forcerelay permission should not filter txs to us
     if (pto.HasPermission(NetPermissionFlags::ForceRelay)) return;
 
-    CAmount currentFilter = Params().GetConsensus().IsProtocolV3_1(GetAdjustedTime()) ? MIN_TX_FEE : DEFAULT_MIN_RELAY_TX_FEE;
+    CAmount currentFilter = TX_FEE_PER_KB;
     static FeeFilterRounder g_filter_rounder{CFeeRate{DEFAULT_MIN_RELAY_TX_FEE}};
 
     if (m_chainman.ActiveChainstate().IsInitialBlockDownload()) {
