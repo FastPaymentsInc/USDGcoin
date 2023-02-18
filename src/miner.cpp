@@ -204,6 +204,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
         *pfPoSCancel = true;
         pblock->nBits = GetNextTargetRequired(pindexPrev, chainparams.GetConsensus(), true);
         CMutableTransaction txCoinStake;
+        txCoinStake.nTime = GetAdjustedTime();
         txCoinStake.nTime &= ~chainparams.GetConsensus().nStakeTimestampMask;
 
         int64_t nSearchTime = txCoinStake.nTime; // search to current time

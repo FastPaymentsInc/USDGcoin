@@ -77,7 +77,7 @@ bool IsStandard(const CScript& scriptPubKey, TxoutType& whichType)
 
 bool IsStandardTx(const CTransaction& tx, bool permit_bare_multisig, const CFeeRate& dust_relay_fee, std::string& reason)
 {
-    if ((!Params().GetConsensus().IsProtocolV3_1(tx.nTime ? (int64_t)tx.nTime : GetAdjustedTime()) && (tx.nVersion > TX_MAX_STANDARD_VERSION-1)) || tx.nVersion > TX_MAX_STANDARD_VERSION || tx.nVersion < 1) {
+    if (tx.nVersion > TX_MAX_STANDARD_VERSION || tx.nVersion < 1) {
         reason = "version";
         return false;
     }

@@ -551,12 +551,6 @@ bool MemPoolAccept::PreChecks(ATMPArgs& args, Workspace& ws)
     if (tx.IsCoinStake())
         return state.Invalid(TxValidationResult::TX_CONSENSUS, "coinstake");
 
-    // Don't relay version 2 transactions until CSV is active, and we can be
-    // sure that such transactions will be mined (unless we're on
-    // -testnet/-regtest).
-    if (fRequireStandard && tx.nVersion >= 2 && !Params().GetConsensus().IsProtocolV3_1(tx.nTime ? tx.nTime : GetAdjustedTime()))
-		return state.Invalid(TxValidationResult::TX_NOT_STANDARD, "premature-version2-tx");
-
     // Rather not work on nonstandard transactions (unless -testnet/-regtest)
     std::string reason;
     if (fRequireStandard && !IsStandardTx(tx, reason))

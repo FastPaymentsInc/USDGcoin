@@ -10,7 +10,6 @@
 #include <util/strencodings.h>
 
 #include <assert.h>
-#include <timedata.h>
 
 std::string COutPoint::ToString() const
 {
@@ -58,7 +57,7 @@ std::string CTxOut::ToString() const
     return strprintf("CTxOut(nValue=%d.%08d, scriptPubKey=%s)", nValue / COIN, nValue % COIN, HexStr(scriptPubKey).substr(0, 30));
 }
 
-CMutableTransaction::CMutableTransaction() : nVersion(CTransaction::CURRENT_VERSION), nTime(GetAdjustedTime()), nLockTime(0) {}
+CMutableTransaction::CMutableTransaction() : nVersion(CTransaction::CURRENT_VERSION), nTime(0), nLockTime(0) {}
 CMutableTransaction::CMutableTransaction(const CTransaction& tx) : vin(tx.vin), vout(tx.vout), nVersion(tx.nVersion), nTime(tx.nTime), nLockTime(tx.nLockTime) {}
 
 uint256 CMutableTransaction::GetHash() const
