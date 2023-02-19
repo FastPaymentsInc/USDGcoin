@@ -80,7 +80,7 @@ public:
         consensus.signet_blocks = false;
         consensus.signet_challenge.clear();
         consensus.nMaxReorganizationDepth = 240;
-        consensus.CSVHeight = std::numeric_limits<int>::max(); // std::numeric_limits<int>::max()
+        consensus.CSVHeight = 279704;
         consensus.SegwitHeight = std::numeric_limits<int>::max(); // std::numeric_limits<int>::max()
         consensus.MinBIP9WarningHeight = std::numeric_limits<int>::max(); // CSV activation height + miner confirmation window
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -195,7 +195,7 @@ public:
         consensus.signet_blocks = false;
         consensus.signet_challenge.clear();
         consensus.nMaxReorganizationDepth = 10;
-        consensus.CSVHeight = std::numeric_limits<int>::max(); // std::numeric_limits<int>::max()
+        consensus.CSVHeight = 5312;
         consensus.SegwitHeight = std::numeric_limits<int>::max(); // std::numeric_limits<int>::max()
         consensus.MinBIP9WarningHeight = std::numeric_limits<int>::max(); // CSV activation height + miner confirmation window
         consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -407,7 +407,7 @@ public:
         consensus.signet_blocks = false;
         consensus.signet_challenge.clear();
         consensus.nMaxReorganizationDepth = 10;
-        consensus.CSVHeight = std::numeric_limits<int>::max();
+        consensus.CSVHeight = 0; // CSV is always activated on regtest
         consensus.SegwitHeight = std::numeric_limits<int>::max();
         consensus.MinBIP9WarningHeight = std::numeric_limits<int>::max();
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
