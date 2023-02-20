@@ -31,10 +31,10 @@ SplashScreen::SplashScreen(const NetworkStyle* networkStyle)
     : QWidget(), curAlignment(0)
 {
     // set reference point, paddings
-    int paddingRight            = 15;
-    int paddingTop              = 50;
+    int paddingRight            = 130;
+    int paddingTop              = 60;
     int titleVersionVSpace      = 17;
-    int titleCopyrightVSpace    = 40;
+    int titleCopyrightVSpace    = 50;
 
     float fontFactor            = 1.0;
     float devicePixelRatio      = 1.0;
@@ -72,7 +72,7 @@ SplashScreen::SplashScreen(const NetworkStyle* networkStyle)
     pixPaint.fillRect(rGradient, gradient);
 
     // draw the usdg icon, expected size of PNG: 1024x1024
-    QRect rectIcon(QPoint(-130,-102), QSize(430,430));
+    QRect rectIcon(QPoint(-130,-102), QSize(350,350));
 
     const QSize requiredSize(1024,1024);
     QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
@@ -99,19 +99,19 @@ SplashScreen::SplashScreen(const NetworkStyle* networkStyle)
     int versionTextWidth  = GUIUtil::TextWidth(fm, versionText);
     if(versionTextWidth > titleTextWidth+paddingRight-10) {
         pixPaint.setFont(QFont(font, 10*fontFactor));
-        titleVersionVSpace -= 5;
+        titleVersionVSpace -= 0;
     }
     pixPaint.drawText(pixmap.width()/devicePixelRatio-titleTextWidth-paddingRight+2,paddingTop+titleVersionVSpace,versionText);
 
     // draw copyright stuff
     {
-        pixPaint.setFont(QFont(font, 10*fontFactor));
+        pixPaint.setFont(QFont(font, 8*fontFactor));
         const int x = pixmap.width()/devicePixelRatio-titleTextWidth-paddingRight;
         const int y = paddingTop+titleCopyrightVSpace;
         pixPaint.drawText(x,y,copyrightTextBitcoin);
-        pixPaint.drawText(x,y+10,copyrightTextBlackcoin);
-        pixPaint.drawText(x,y+20,copyrightTextBlackmore);
-        pixPaint.drawText(x,y+30,copyrightTextUSDG);
+        pixPaint.drawText(x,y+15,copyrightTextBlackcoin);
+        pixPaint.drawText(x,y+30,copyrightTextBlackmore);
+        pixPaint.drawText(x,y+45,copyrightTextUSDG);
     }
 
     // draw additional text if special network
